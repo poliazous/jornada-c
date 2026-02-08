@@ -1,0 +1,19 @@
+```
+# Arquivos executáveis
+*.exe
+*.out
+a.out
+
+# Arquivos de objeto
+*.o
+*.obj
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.cbp
+*.layout
