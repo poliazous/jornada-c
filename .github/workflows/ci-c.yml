@@ -1,0 +1,58 @@
+name: CI para Programas C
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  compilar-e-testar:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Baixar código
+        uses: actions/checkout@v3
+      
+      - name: 🔍 Verificar GCC
+        run: |
+          gcc --version
+          echo "✅ GCC instalado!"
+      
+      - name: 📂 Listar arquivos
+        run: |
+          echo "📁 Estrutura do repositório:"
+          ls -la
+          echo ""
+          echo "📁 Pasta 01-fundamentos:"
+          ls -la 01-fundamentos/
+      
+      - name: 🔨 Compilar hello-world.c
+        run: |
+          cd 01-fundamentos
+          gcc hello-world.c -o hello-world
+          echo "✅ hello-world.c compilado!"
+      
+      - name: ▶️ Executar hello-world
+        run: |
+          cd 01-fundamentos
+          ./hello-world
+          echo "✅ hello-world executado!"
+      
+      - name: 🔨 Compilar variaveis.c
+        run: |
+          cd 01-fundamentos
+          gcc variaveis.c -o variaveis
+          echo "✅ variaveis.c compilado!"
+      
+      - name: ▶️ Executar variaveis
+        run: |
+          cd 01-fundamentos
+          ./variaveis
+          echo "✅ variaveis executado!"
+      
+      - name: 🎉 Sucesso
+        run: |
+          echo "════════════════════════════════════"
+          echo "   ✅ TODOS OS PROGRAMAS RODARAM!  "
+          echo "════════════════════════════════════"
