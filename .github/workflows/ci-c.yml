@@ -27,17 +27,17 @@ jobs:
           echo "📁 Pasta 01-fundamentos:"
           ls -la 01-fundamentos/
       
-      - name: 🔨 Compilar hello-world.c
+      - name: 🔨 Compilar hello.world.c
         run: |
           cd 01-fundamentos
-          gcc hello-world.c -o hello-world
-          echo "✅ hello-world.c compilado!"
+          gcc hello.world.c -o hello.world
+          echo "✅ hello.world.c compilado!"
       
-      - name: ▶️ Executar hello-world
+      - name: ▶️ Executar hello.world
         run: |
           cd 01-fundamentos
-          ./hello-world
-          echo "✅ hello-world executado!"
+          ./hello.world
+          echo "✅ hello.world executado!"
       
       - name: 🔨 Compilar variaveis.c
         run: |
