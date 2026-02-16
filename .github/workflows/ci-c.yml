@@ -27,6 +27,7 @@ jobs:
           echo "📁 Pasta 01-fundamentos:"
           ls -la 01-fundamentos/
       
+      # === HELLO.WORLD ===
       - name: 🔨 Compilar hello.world.c
         run: |
           cd 01-fundamentos
@@ -39,6 +40,7 @@ jobs:
           ./hello.world
           echo "✅ hello.world executado!"
       
+      # === VARIAVEIS ===
       - name: 🔨 Compilar variaveis.c
         run: |
           cd 01-fundamentos
@@ -51,8 +53,26 @@ jobs:
           ./variaveis
           echo "✅ variaveis executado!"
       
+      # === ENTRADA.SAIDA ===
+      - name: 🔨 Compilar entrada.saida.c
+        run: |
+          cd 01-fundamentos
+          gcc entrada.saida.c -o entrada.saida
+          echo "✅ entrada.saida.c compilado!"
+      
+      - name: ▶️ Executar entrada.saida com testes
+        run: |
+          cd 01-fundamentos
+          echo "📝 Testando entrada.saida:"
+          echo -e "João\n20\n12345\n1.75" | ./entrada.saida
+          echo ""
+          echo "✅ entrada.saida executado!"
+      
       - name: 🎉 Sucesso
         run: |
           echo "════════════════════════════════════"
           echo "   ✅ TODOS OS PROGRAMAS RODARAM!  "
+          echo "   ✅ HELLO.WORLD                  "
+          echo "   ✅ VARIAVEIS                     "
+          echo "   ✅ ENTRADA.SAIDA                 "
           echo "════════════════════════════════════"
