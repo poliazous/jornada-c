@@ -66,7 +66,7 @@ jornada-c/
 ## 📈 Progresso
 
 - [x] Hello World
-- [ ] Variáveis e tipos de dados
+- [x] Variáveis e tipos de dados
 - [ ] Estruturas condicionais
 - [ ] Ponteiros
 - [ ] Estruturas de dados
@@ -79,7 +79,7 @@ jornada-c/
 - Implementar estruturas de dados clássicas
 - Desenvolver projetos práticos
 
-## 📝 Projetos Desenvolvidos
+## 📝 Projetos a serem Desenvolvidos
 
 1. **Calculadora Básica** - Operações aritméticas simples
 2. **Sistema de Cadastro** - CRUD com structs
