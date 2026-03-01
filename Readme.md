@@ -81,16 +81,17 @@ jornada-c/
 
 ## 📝 Projetos a serem Desenvolvidos
 
-1. **Calculadora Básica** - Operações aritméticas simples
-2. **Sistema de Cadastro** - CRUD com structs
-3. **Jogo da Velha** - Lógica de jogo em terminal
-4. *(em breve mais projetos...)*
+1. **Super Trunfo** - Básico ao Avançado
+2. **Calculadora Básica** - Operações aritméticas simples
+3. **Sistema de Cadastro** - CRUD com structs
+4. **Jogo da Velha** - Lógica de jogo em terminal
+5. *(em breve mais projetos...)*
 
 ## 📖 Recursos de Estudo
 
 - [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Kernighan & Ritchie
 - [Learn-C.org](https://www.learn-c.org/)
-- Apostilas da faculdade
+- Apostilas da faculdade Estácio
 
 ## 📫 Contato
 
