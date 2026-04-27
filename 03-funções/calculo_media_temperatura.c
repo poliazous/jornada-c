@@ -1,26 +1,26 @@
 #include <stdio.h>
 
-float notas[3];
+float temperatura[3];
 
 void entradaDados() {
-    printf("Digite a nota 1: ");
-    scanf("%f", &notas[0]);
-    printf("Digite a nota 2: ");
-    scanf("%f", &notas[1]);
-    printf("Digite a nota 3: ");
-    scanf("%f", &notas[2]);
+    printf("Digite a temperatura 1: ");
+    scanf("%f", &temperatura[0]);
+    printf("Digite a temperatura 2: ");
+    scanf("%f", &temperatura[1]);
+    printf("Digite a temperatura 3: ");
+    scanf("%f", &temperatura[2]);
 }
 
 float calcularMedia() {
-    return (notas[0] + notas[1] + notas[2]) / 3;
+    return (temperatura[0] + temperatura[1] + temperatura[2]) / 3;
 }
 
 void exibirMedia(float media) {
     printf("\nMedia: %.2f\n", media);
-    if (media >= 7) {
-        printf("Situacao: APROVADO\n");
-    } else {
+    if (media >= 28.0) {
         printf("Situacao: REPROVADO\n");
+    } else {
+        printf("Situacao: APROVADO\n");
     }
 }
 
